@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WorkIt</string>
+    <string name="cronologia">Cronologia</string>
+    <string name="dettaglio">Dettaglio</string>
+    <string name="dummy_data">Martedì 30 Maggio</string>
+    <string name="dummy_in">9:00</string>
+    <string name="dummy_out">18:00</string>
+    <string name="dummy_pause">1 ora</string>
+    <string name="entrata">Entrata</string>
+    <string name="name">Nome</string>
+    <string name="pausa">Pausa</string>
+    <string name="report">Report</string>
+    <string name="salva">Salva</string>
+    <string name="show_message">Mostra Messaggio</string>
+    <string name="uscita">Uscita</string>
+    <string name="opzioni">Opzioni</string>
+    <string name="desc_opt_geofencing">Geolocalizzazione</string>
+    <string name="set">Conferma</string>
+    <string name="cancel">Annulla</string>
+    <string name="desc_th_geofencing">Threshold Geolocalizzazione</string>
+    <string name="categoria_geo">Impostazioni di Localizzazione</string>
+    <string name="categoria_orari">Impostazioni Orari</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/categoria_orari">
+    <it.eng.workit.TimePreference
+        android:key="timePrefA_Key"
+        android:title="@string/entrata"/>
+
+    <EditTextPreference
+        android:key="timePause"
+        android:title="@string/pausa"
+        android:summary="@string/pausa"
+        android:inputType="number"/>
+
+    <it.eng.workit.TimePreference
+        android:key="timePrefB_Key"
+        android:title="@string/uscita"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/categoria_geo">
+    <CheckBoxPreference
+        android:key="geofencing"
+        android:summary="@string/desc_opt_geofencing"/>
+
+    <EditTextPreference
+    android:key="geofencing_threshold"
+    android:title="@string/desc_th_geofencing"
+    android:summary="@string/desc_th_geofencing"
+    android:inputType="number"/>
+    </PreferenceCategory>
+</PreferenceScreen>
