@@ -33,7 +33,7 @@ public class DBManager extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_CHARACTERS_TABLE = "CREATE TABLE " + TABLE_GIORNI + "("
-                + KEY_ID + " INTEGER PRIMARY KEY,"
+                + KEY_ID + " LONG PRIMARY KEY,"
                 + KEY_IN_DT_TIME + " NUMBER,"
                 + KEY_OUT_DT_TIME + " NUMBER" + ")";
         db.execSQL(CREATE_CHARACTERS_TABLE);
@@ -73,7 +73,7 @@ public class DBManager extends SQLiteOpenHelper {
         values.put(KEY_IN_DT_TIME, giorno.getIn_dt_time());
         values.put(KEY_OUT_DT_TIME, giorno.getOut_dt_time());
 
-        Log.d("DBManager","Giorno creato");
+        Log.i("DBManager","Giorno creato");
 
         // Inserting Row
         db.insert(TABLE_GIORNI, null, values);

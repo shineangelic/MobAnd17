@@ -4,7 +4,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@drawable/gradient"
-tools:context="it.eng.workit.Dettaglio">
+tools:context="it.eng.moband2017.DettaglioActivity">
 
 <LinearLayout
     android:id="@+id/dettaglio_bottoniera"
@@ -160,7 +160,8 @@ tools:context="it.eng.workit.Dettaglio">
             android:layout_marginTop="18dp"
             android:layout_below="@+id/editText2"
             android:layout_alignLeft="@+id/editText2"
-            android:layout_alignStart="@+id/editText2" />
+            android:layout_alignStart="@+id/editText2"
+            android:onClick="showTimePickerDialog"/>
 
 
         <Button
@@ -170,7 +171,8 @@ tools:context="it.eng.workit.Dettaglio">
             android:text="@string/salva"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="32dp" />
+            android:layout_marginBottom="32dp"
+            android:onClick="inserisciGiorno"/>
 
 
 </RelativeLayout>
