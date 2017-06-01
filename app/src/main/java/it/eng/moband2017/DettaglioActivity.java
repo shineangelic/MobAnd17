@@ -2,30 +2,29 @@ package it.eng.moband2017;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import java.util.Calendar;
 
 public class DettaglioActivity extends Fragment {
 
     DBManager dbManager;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dettaglio);
-
-        dbManager = new DBManager(getApplicationContext());
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.activity_dettaglio, container, false);
+        dbManager = new DBManager(getActivity());
         return root;
     }
 
@@ -33,7 +32,7 @@ public class DettaglioActivity extends Fragment {
         Giorno newGiorno = new Giorno();
 
         // ora entrata
-        TextView appoTextViewIn = (TextView) findViewById(R.id.editText);
+        TextView appoTextViewIn = (TextView) getActivity().findViewById(R.id.editText);
 
         String appoDayin = appoTextViewIn.getText().toString();
         int indiceIn = appoDayin.indexOf(":");
@@ -44,7 +43,7 @@ public class DettaglioActivity extends Fragment {
         newGiorno.setIn_dt_time(today.getTime().getTime());
 
         // ora uscita
-        TextView appoTextViewOut = (TextView) findViewById(R.id.editText4);
+        TextView appoTextViewOut = (TextView) getActivity().findViewById(R.id.editText4);
 
         appoDayin = appoTextViewOut.getText().toString();
         indiceIn = appoDayin.indexOf(":");
