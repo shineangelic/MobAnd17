@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -86,11 +86,11 @@ public class MainActivity extends AppCompatActivity
             fm.beginTransaction().replace(R.id.content_frame, new DettaglioActivity()).commit();
         } else if (id == R.id.nav_calendar) {
             /*fm.beginTransaction().replace(R.id.content_frame, new CalendarFragment()).commit();*/
-        } else if (id == R.id.nav_import) {
+        }/*else if (id == R.id.nav_import) {
 
         } else if (id == R.id.nav_export) {
 
-        }
+        }*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
