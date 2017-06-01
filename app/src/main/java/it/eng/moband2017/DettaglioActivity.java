@@ -19,16 +19,30 @@ import java.util.Calendar;
 public class DettaglioActivity extends Fragment {
 
     DBManager dbManager;
+    private View buttonSave;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.activity_dettaglio, container, false);
-        dbManager = new DBManager(getActivity());
+
         return root;
     }
 
-    public void inserisciGiorno(View view){
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        buttonSave = getActivity().findViewById(R.id.button5);
+        buttonSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                inserisciGiorno();
+            }
+        });
+        dbManager = new DBManager(getActivity());
+    }
+
+    public void inserisciGiorno(){
         Giorno newGiorno = new Giorno();
 
         // ora entrata

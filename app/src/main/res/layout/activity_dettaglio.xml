@@ -160,8 +160,7 @@ tools:context="it.eng.moband2017.DettaglioActivity">
             android:layout_marginTop="18dp"
             android:layout_below="@+id/editText2"
             android:layout_alignLeft="@+id/editText2"
-            android:layout_alignStart="@+id/editText2"
-            android:onClick="showTimePickerDialog"/>
+            android:layout_alignStart="@+id/editText2"/>
 
 
         <Button
@@ -172,7 +171,7 @@ tools:context="it.eng.moband2017.DettaglioActivity">
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="32dp"
-            android:onClick="inserisciGiorno"/>
+            />
 
 
 </RelativeLayout>
