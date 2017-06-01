@@ -39,15 +39,18 @@ public class DettaglioActivity extends Fragment {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                inserisciGiorno();
-                Toast.makeText(getActivity(),"Salvataggio avvenuto.", Toast.LENGTH_SHORT).show();
+                int retCode = inserisciGiorno();
+                if(retCode == 0)
+                    Toast.makeText(getActivity(),"Salvataggio avvenuto.", Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(getActivity(),"Salvataggio fallito.", Toast.LENGTH_SHORT).show();
 
             }
         });
         dbManager = new DBManager(getActivity());
     }
 
-    public void inserisciGiorno(){
+    public int inserisciGiorno(){
         Giorno newGiorno = new Giorno();
 
         // ora entrata
@@ -72,6 +75,6 @@ public class DettaglioActivity extends Fragment {
         Log.w("DATAOUT", "Setto data out a: "+ today.getTime().toString());
         newGiorno.setOut_dt_time(today.getTime().getTime());
 
-        dbManager.saveGiorno(newGiorno);
+        return dbManager.saveGiorno(newGiorno);
     }
 }

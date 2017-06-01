@@ -66,7 +66,7 @@ public class DBManager extends SQLiteOpenHelper {
     // METODI INSERT
     // ------------------------------------------------------------------------------------
     // Creo nuovo Giorno
-    public void saveGiorno(Giorno giorno) {
+    public int saveGiorno(Giorno giorno) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -74,10 +74,16 @@ public class DBManager extends SQLiteOpenHelper {
         values.put(KEY_OUT_DT_TIME, giorno.getOut_dt_time());
 
         Log.i("DBManager","Giorno creato");
-
+int ritorno = 0;
         // Inserting Row
-        db.insert(TABLE_GIORNI, null, values);
+        try{
+            db.insert(TABLE_GIORNI, null, values);
+
+        }catch (Exception e){
+            ritorno = 1;
+        }
         db.close(); // Closing database connection
+        return ritorno;
     }
 
 
