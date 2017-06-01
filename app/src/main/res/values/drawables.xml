@@ -1,0 +1,8 @@
+<resources>
+    <item name="ic_query_builder_black" type="drawable">@drawable/ic_query_builder_black_48dp</item>
+    <item name="ic_date_range_black" type="drawable">@drawable/ic_date_range_black_48dp</item>
+    <item name="ic_settings_black" type="drawable">@drawable/ic_settings_black_48dp</item>
+    <item name="ic_file_download_black" type="drawable">@drawable/ic_file_download_black_48dp</item>
+    <item name="ic_file_upload_black" type="drawable">@drawable/ic_file_upload_black_48dp</item>
+    <item name="ic_create_white" type="drawable">@drawable/ic_create_white_48dp</item>
+</resources>
