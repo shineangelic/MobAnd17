@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dettaglio" />
+        <activity android:name=".DettaglioActivity" />
         <activity android:name=".OpzioniActivity"/>
         <activity android:name=".CallBackTest" />
     </application>

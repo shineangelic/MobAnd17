@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showDettaglio(View view){
-        Intent chiamodettaglio = new Intent(this, Dettaglio.class);
+        Intent chiamodettaglio = new Intent(this, DettaglioActivity.class);
         startActivity(chiamodettaglio);
     }
 
