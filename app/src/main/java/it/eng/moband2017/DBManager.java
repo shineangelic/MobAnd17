@@ -80,6 +80,7 @@ int ritorno = 0;
             db.insert(TABLE_GIORNI, null, values);
 
         }catch (Exception e){
+            Log.e("ERROR",e.toString());
             ritorno = 1;
         }
         db.close(); // Closing database connection

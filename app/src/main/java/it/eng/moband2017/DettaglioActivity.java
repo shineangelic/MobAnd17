@@ -52,29 +52,36 @@ public class DettaglioActivity extends Fragment {
 
     public int inserisciGiorno(){
         Giorno newGiorno = new Giorno();
+        int retCode = 0;
 
         // ora entrata
-        TextView appoTextViewIn = (TextView) getActivity().findViewById(R.id.editText);
+        try {
+            TextView appoTextViewIn = (TextView) getActivity().findViewById(R.id.editText);
 
-        String appoDayin = appoTextViewIn.getText().toString();
-        int indiceIn = appoDayin.indexOf(":");
-        Calendar today = Calendar.getInstance();
-                today.set(Calendar.HOUR_OF_DAY,Integer.valueOf(appoDayin.substring(0,indiceIn)));
-                today.set(Calendar.MINUTE,Integer.valueOf(appoDayin.substring(indiceIn+1)));
-        Log.w("DATAIN", "Setto data in a: "+ today.getTime().toString());
-        newGiorno.setIn_dt_time(today.getTime().getTime());
+            String appoDayin = appoTextViewIn.getText().toString();
+            int indiceIn = appoDayin.indexOf(":");
+            Calendar today = Calendar.getInstance();
+            today.set(Calendar.HOUR_OF_DAY, Integer.valueOf(appoDayin.substring(0, indiceIn)));
+            today.set(Calendar.MINUTE, Integer.valueOf(appoDayin.substring(indiceIn + 1)));
+            Log.w("DATAIN", "Setto data in a: " + today.getTime().toString());
+            newGiorno.setIn_dt_time(today.getTime().getTime());
 
-        // ora uscita
-        TextView appoTextViewOut = (TextView) getActivity().findViewById(R.id.editText4);
+            // ora uscita
+            TextView appoTextViewOut = (TextView) getActivity().findViewById(R.id.editText4);
 
-        appoDayin = appoTextViewOut.getText().toString();
-        indiceIn = appoDayin.indexOf(":");
-        today = Calendar.getInstance();
-        today.set(Calendar.HOUR_OF_DAY,Integer.valueOf(appoDayin.substring(0,indiceIn)));
-        today.set(Calendar.MINUTE,Integer.valueOf(appoDayin.substring(indiceIn+1)));
-        Log.w("DATAOUT", "Setto data out a: "+ today.getTime().toString());
-        newGiorno.setOut_dt_time(today.getTime().getTime());
-
-        return dbManager.saveGiorno(newGiorno);
+            appoDayin = appoTextViewOut.getText().toString();
+            indiceIn = appoDayin.indexOf(":");
+            today = Calendar.getInstance();
+            today.set(Calendar.HOUR_OF_DAY, Integer.valueOf(appoDayin.substring(0, indiceIn)));
+            today.set(Calendar.MINUTE, Integer.valueOf(appoDayin.substring(indiceIn + 1)));
+            Log.w("DATAOUT", "Setto data out a: " + today.getTime().toString());
+            newGiorno.setOut_dt_time(today.getTime().getTime());
+            retCode = dbManager.saveGiorno(newGiorno);
+        }
+        catch (Exception e){
+            Log.e("ERROR",e.toString());
+            retCode = 1;
+        }
+        return  retCode;
     }
 }
