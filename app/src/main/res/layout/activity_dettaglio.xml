@@ -12,57 +12,7 @@ tools:context="it.eng.moband2017.DettaglioActivity">
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:weightSum="3">
-
-    <Button
-        android:id="@+id/dettaglio_button"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginTop="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/button_left"
-        android:shadowColor="@android:color/darker_gray"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="3"
-        android:text="@string/dettaglio"
-        android:textColor="#ffffff"
-        tools:ignore="ButtonStyle" />
-
-    <Button
-        android:id="@+id/dettaglio_button2"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_margin="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/button_middle"
-        android:shadowColor="@android:color/darker_gray"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="3"
-        android:text="@string/cronologia"
-        android:textColor="#ffffff"
-        tools:ignore="ButtonStyle" />
-
-    <Button
-        android:id="@+id/dettaglio_button3"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginTop="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/button_right"
-        android:shadowColor="@android:color/darker_gray"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="3"
-        android:text="@string/report"
-        android:textColor="#ffffff"
-        tools:ignore="ButtonStyle" />
+    
 </LinearLayout>
 
 
