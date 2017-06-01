@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -39,6 +40,8 @@ public class DettaglioActivity extends Fragment {
             @Override
             public void onClick(View v) {
                 inserisciGiorno();
+                Toast.makeText(getActivity(),"Salvataggio avvenuto.", Toast.LENGTH_SHORT).show();
+
             }
         });
         dbManager = new DBManager(getActivity());

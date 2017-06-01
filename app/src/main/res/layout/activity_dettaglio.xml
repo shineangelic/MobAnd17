@@ -12,7 +12,7 @@ tools:context="it.eng.moband2017.DettaglioActivity">
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:weightSum="3">
-    
+
 </LinearLayout>
 
 
