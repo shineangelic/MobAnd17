@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_timer"
+            android:icon="@drawable/ic_query_builder_black"
+            android:title="@string/dettaglio" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_date_range_black"
+            android:title="@string/cronologia" />
+    </group>
+    <!--<item android:title="@string/Manage">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_import"-->
+                <!--android:icon="@drawable/ic_file_download_black"-->
+                <!--android:title="@string/Import" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_export"-->
+                <!--android:icon="@drawable/ic_file_upload_black"-->
+                <!--android:title="@string/Export" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

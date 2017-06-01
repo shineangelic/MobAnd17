@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="it.eng.moband2017.MainActivitysafas">
+    tools:context="it.eng.moband2017.MainActivity">
 
     <FrameLayout
         android:id="@+id/content"

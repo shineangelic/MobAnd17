@@ -24,4 +24,7 @@
     <string name="title_home">Titolo</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifiche</string>
+    <string name="guest">Ospite</string>
+    <string name="navigation_drawer_close">Chiudi navigazione</string>
+    <string name="navigation_drawer_open">Apri navigazione</string>
 </resources>
