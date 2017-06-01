@@ -92,4 +92,7 @@
     <string name="set">Ok</string>
     <string name="cancel">Cancel</string>
     <string name="desc_th_geofencing">Geofencing Threshold</string>
+    <string name="title_home">Titolo</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifiche</string>
 </resources>

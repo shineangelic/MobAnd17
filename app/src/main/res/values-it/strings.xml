@@ -21,4 +21,7 @@
     <string name="desc_th_geofencing">Threshold Geolocalizzazione</string>
     <string name="categoria_geo">Impostazioni di Localizzazione</string>
     <string name="categoria_orari">Impostazioni Orari</string>
+    <string name="title_home">Titolo</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifiche</string>
 </resources>
