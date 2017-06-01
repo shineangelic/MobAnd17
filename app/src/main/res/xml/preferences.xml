@@ -3,7 +3,7 @@
 
     <PreferenceCategory
         android:title="@string/categoria_orari">
-    <it.eng.workit.TimePreference
+    <it.eng.moband2017.TimePreference
         android:key="timePrefA_Key"
         android:title="@string/entrata"/>
 
@@ -13,7 +13,7 @@
         android:summary="@string/pausa"
         android:inputType="number"/>
 
-    <it.eng.workit.TimePreference
+    <it.eng.moband2017.TimePreference
         android:key="timePrefB_Key"
         android:title="@string/uscita"/>
     </PreferenceCategory>
