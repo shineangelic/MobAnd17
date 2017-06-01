@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="it.eng.workit.OpzioniActivity">
+    tools:context="it.eng.moband2017.OpzioniActivity">
 
 </android.support.constraint.ConstraintLayout>

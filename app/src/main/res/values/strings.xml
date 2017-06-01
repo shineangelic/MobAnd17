@@ -18,6 +18,9 @@
     <string name="desc_opt_geofencing">Geofencing</string>
     <string name="categoria_orari">Time Settings</string>
     <string name="categoria_geo">Location Settings</string>
+    <string name="guest">Guest</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <!-- Strings related to Settings -->
 
     <!-- Example General settings -->
